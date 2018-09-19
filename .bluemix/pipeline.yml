@@ -24,6 +24,9 @@ stages:
   - name: APP_URL
     value: undefined
     type: text
+  - name: MY_SECRET
+    value: ${SUPER_SECRET_PASSWORD}
+    type: secure
   jobs:
   - name: Blue-Green Deploy
     type: deployer
