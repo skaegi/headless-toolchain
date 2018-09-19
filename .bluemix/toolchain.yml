@@ -42,6 +42,7 @@ services:
           $text: pipeline.yml
         env:
           SAMPLE_REPO: sample-repo
+          SUPER_SECRET_PASSWORD: xyzzy
           CF_APP_NAME: '{{services.sample-repo.parameters.repo_name}}'
           PROD_SPACE_NAME: '{{space}}'
           PROD_ORG_NAME: '{{organization}}'
